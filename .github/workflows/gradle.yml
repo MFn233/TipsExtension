@@ -46,6 +46,15 @@ jobs:
     #
     # - name: Build with Gradle 8.9
     #   run: gradle build
+        # --- 新增步骤：上传构建产物 ---
+    - name: Upload Build Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: TipsExtension
+        path: build/libs/*.jar
+        # 可选：如果构建失败也想保留产物用于调试，可以设置 retention-days
+        # retention-days: 5 
+        # 可选：如果不想压缩，可以设置 compression-level: 0 (默认为 6)
 
   dependency-submission:
 
