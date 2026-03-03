@@ -1,21 +1,23 @@
-## TemplateDevEnv
-_For Kotlin see [TemplateDevEnvKt](https://github.com/CleanroomMC/TemplateDevEnvKt)_
+## ✨ Features
 
-Template workspace for modding Minecraft 1.12.2. Licensed under MIT, it is made for public use.
+* Pause Menu Support: Displays tips **when the game is paused**. Tips in the pause menu automatically refresh according to the interval you set.
 
-This template runs on **Java 25**, **Gradle 9.2.1** + **[RetroFuturaGradle](https://github.com/GTNewHorizons/RetroFuturaGradle) 2.0.2** + **Forge 14.23.5.2847**.
+![pause menu tips options](https://cdn.modrinth.com/data/cached_images/ab930d6b948a407c513dd58a285f7e245030dde0.png)
 
-With **coremod and mixin support** that is easy to configure.
+![tips in the pause menu](https://cdn.modrinth.com/data/cached_images/cd0606393ecdb8ec39ce6938272aba4228976810_0.webp)
 
-### Instructions:
+Pause menu tips share the same content and style as the **loading screen** tips. You can customize them via the config file of the original *Tips* mod.
 
-1. Click `use this template` at the top.
-2. Clone the repository that you have created with this template to your local machine.
-3. Make sure IDEA is using Java 25 for Gradle before you sync the project. Verify this by going to IDEA's `Settings > Build, Execution, Deployment > Build Tools > Gradle > Gradle JVM`.
-4. Open the project folder in IDEA. When prompted, click "Load Gradle Project" as it detects the `build.gradle`, if you weren't prompted, right-click the project's `build.gradle` in IDEA, select `Link Gradle Project`, after completion, hit `Refresh All` in the gradle tab on the right.
-5. Run gradle tasks such as `runClient` and `runServer` in the IDEA gradle tab, or use the auto-imported run configurations like `1. Run Client`.
+![customized tips style](https://cdn.modrinth.com/data/cached_images/5396c2fed73160dbf5c60cf22cd7caa320bf2a20_0.webp)
 
-### Notes:
-- Dependencies script in [gradle/scripts/dependencies.gradle](gradle/scripts/dependencies.gradle), explanations are commented in the file.
-- Publishing script in [gradle/scripts/publishing.gradle](gradle/scripts/publishing.gradle).
-- When writing Mixins on IntelliJ, it is advisable to use latest [MinecraftDev Fork for RetroFuturaGradle](https://github.com/eigenraven/MinecraftDev/releases).
+* Customizable Animations: Includes a new **breathing effect**. You can adjust its fade speed and opacity to your liking.
+
+![breathing effect options](https://cdn.modrinth.com/data/cached_images/517cb04f826c60c98cafefe09252eadb543a1ad2.png)
+
+![tips breathing effect](https://cdn.modrinth.com/data/cached_images/cc4b9dfdf46ead8b3350eadd0130e1cf4ffb7ec1.gif)
+
+The breathing effect also applies to loading screen tips.
+
+## ❓ Why This Mod Exists
+
+I originally created this mod solely to enable tips in the **pause menu** for **Minecraft 1.12.2**, as this feature was **missing** in older versions of the *Tips* mod. Later, I expanded it by adding a **customizable breathing effect** to enhance the visual experience.

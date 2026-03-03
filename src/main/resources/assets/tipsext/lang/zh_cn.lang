@@ -1,0 +1,30 @@
+# Tips Extension 语言文件
+
+tipsext.config.title=Tips Extension 配置
+
+# 分类名称
+tipsext.config.category.general=常规
+tipsext.config.category.breathing=呼吸效果
+
+# 常规
+tipsext.config.enableAutoRefresh=启用自动刷新
+tipsext.config.enableAutoRefresh.tooltip=如果启用，暂停页面的提示将根据下方设置的时间间隔定期更换。
+
+tipsext.config.refreshInterval=提示刷新间隔 (秒)
+tipsext.config.refreshInterval.tooltip=决定提示停留多少秒后进行切换。仅在启用“自动刷新”时生效。
+
+# 呼吸效果
+tipsext.config.enableFade=提示正文呼吸效果
+tipsext.config.enableFade.tooltip=为加载页面和 ESC 菜单中的提示语添加平滑的呼吸 / 淡入淡出效果。
+
+tipsext.config.fadeSpeed=呼吸循环速度 (毫秒)
+tipsext.config.fadeSpeed.tooltip=数值越大，呼吸效果的速度就越慢。
+
+tipsext.config.minAlpha=最小透明度
+tipsext.config.minAlpha.tooltip=文字在最暗时的透明度。
+
+tipsext.config.maxAlpha=最大透明度
+tipsext.config.maxAlpha.tooltip=文字在最亮时的透明度。
+
+# Tips Mod 标题
+tips.gui.title=提示

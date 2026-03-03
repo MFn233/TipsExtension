@@ -1,0 +1,30 @@
+# Tips Extension Language File
+
+tipsext.config.title=Tips Extension Configuration
+
+# Category names
+tipsext.config.category.general=General
+tipsext.config.category.breathing=Breathing Effect
+
+# General
+tipsext.config.enableAutoRefresh=Enable Auto Refresh
+tipsext.config.enableAutoRefresh.tooltip=If enabled, the tip in ESC menu will change periodically based on the interval below.
+
+tipsext.config.refreshInterval=Refresh Interval (second)
+tipsext.config.refreshInterval.tooltip=Determines how many seconds a tip stays before changing. Only works if Auto Refresh is enabled.
+
+# Fade Effect
+tipsext.config.enableFade=Tip Text Breathing Effect
+tipsext.config.enableFade.tooltip=Adds a smooth breathing / fade effect to tips on both loading screen and ESC menu.
+
+tipsext.config.fadeSpeed=Fade Cycle Speed (ms)
+tipsext.config.fadeSpeed.tooltip=Higher values mean slower breathing.
+
+tipsext.config.minAlpha=Minimum Alpha
+tipsext.config.minAlpha.tooltip=The transparency when the text is at its dimmest.
+
+tipsext.config.maxAlpha=Maximum Alpha
+tipsext.config.maxAlpha.tooltip=The transparency when the text is at its brightest.
+
+# Tips Mod Title
+tips.gui.title=Tip
