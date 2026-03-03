@@ -21,3 +21,5 @@ The breathing effect also applies to loading screen tips.
 ## ❓ Why This Mod Exists
 
 I originally created this mod solely to enable tips in the **pause menu** for **Minecraft 1.12.2**, as this feature was **missing** in older versions of the *Tips* mod. Later, I expanded it by adding a **customizable breathing effect** to enhance the visual experience.
+
+> ❗Note: AI tools were used to assist in the development of this mod.❗
