@@ -16,7 +16,7 @@ public class TipsExtension {
 
     public static final String MODID = "tipsext";
     public static final String NAME = "Tips Extension";
-    public static final String VERSION = "1.0.0";
+    public static final String VERSION = "1.1.0";
 
     public static Logger logger;
 

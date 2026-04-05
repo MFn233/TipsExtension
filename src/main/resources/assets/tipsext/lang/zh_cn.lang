@@ -7,6 +7,9 @@ tipsext.config.category.general=常规
 tipsext.config.category.breathing=呼吸效果
 
 # 常规
+tipsext.config.showPauseTips=显示暂停界面提示
+tipsext.config.showPauseTips.tooltip=是否在按下 ESC 后的暂停菜单中显示提示语。
+
 tipsext.config.enableAutoRefresh=启用自动刷新
 tipsext.config.enableAutoRefresh.tooltip=如果启用，暂停页面的提示将根据下方设置的时间间隔定期更换。
 
@@ -15,7 +18,7 @@ tipsext.config.refreshInterval.tooltip=决定提示停留多少秒后进行切�
 
 # 呼吸效果
 tipsext.config.enableFade=提示正文呼吸效果
-tipsext.config.enableFade.tooltip=为加载页面和 ESC 菜单中的提示语添加平滑的呼吸 / 淡入淡出效果。
+tipsext.config.enableFade.tooltip=为 ESC 菜单中的提示语添加平滑的呼吸效果。
 
 tipsext.config.fadeSpeed=呼吸循环速度 (毫秒)
 tipsext.config.fadeSpeed.tooltip=数值越大，呼吸效果的速度就越慢。
