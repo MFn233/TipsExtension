@@ -1,0 +1,33 @@
+# Tips Extension Language File - Swedish (Svenska)
+
+tipsext.config.title=Tips Extension Konfiguration
+
+# Category names
+tipsext.config.category.general=Allmänt
+tipsext.config.category.breathing=Andningseffekt
+
+# General
+tipsext.config.showPauseTips=Visa tips i pausmenyn
+tipsext.config.showPauseTips.tooltip=Växla synligheten för tips på pausmenyn (ESC).
+
+tipsext.config.enableAutoRefresh=Aktivera automatisk uppdatering
+tipsext.config.enableAutoRefresh.tooltip=Om aktiverat kommer tipset i ESC-menyn att ändras periodiskt baserat på intervallet nedan.
+
+tipsext.config.refreshInterval=Uppdateringsintervall (sekunder)
+tipsext.config.refreshInterval.tooltip=Bestämmer hur många sekunder ett tips visas innan det ändras. Fungerar endast om automatisk uppdatering är aktiverad.
+
+# Fade Effect
+tipsext.config.enableFade=Andningseffekt för tipstext
+tipsext.config.enableFade.tooltip=Lägger till en mjuk andningseffekt på tips i ESC-menyn.
+
+tipsext.config.fadeSpeed=Andningshastighet (ms)
+tipsext.config.fadeSpeed.tooltip=Högre värden innebär långsammare andning.
+
+tipsext.config.minAlpha=Minsta Alpha
+tipsext.config.minAlpha.tooltip=Transparensen när texten är som svagast.
+
+tipsext.config.maxAlpha=Maximal Alpha
+tipsext.config.maxAlpha.tooltip=Transparensen när texten är som starkast.
+
+# Tips Mod Title
+tips.gui.title=Tips

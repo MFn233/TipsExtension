@@ -1,0 +1,33 @@
+# Tips Extension Language File - Russian (Русский)
+
+tipsext.config.title=Настройка Tips Extension
+
+# Category names
+tipsext.config.category.general=Общие
+tipsext.config.category.breathing=Эффект дыхания
+
+# General
+tipsext.config.showPauseTips=Показывать советы в меню паузы
+tipsext.config.showPauseTips.tooltip=Включает или отключает отображение советов в меню паузы (ESC).
+
+tipsext.config.enableAutoRefresh=Включить автообновление
+tipsext.config.enableAutoRefresh.tooltip=Если включено, советы в меню ESC будут периодически меняться согласно интервалу ниже.
+
+tipsext.config.refreshInterval=Интервал обновления (сек)
+tipsext.config.refreshInterval.tooltip=Определяет, сколько секунд отображается совет перед сменой. Работает только при включенном автообновлении.
+
+# Fade Effect
+tipsext.config.enableFade=Эффект дыхания текста советов
+tipsext.config.enableFade.tooltip=Добавляет плавный эффект дыхания для советов в меню ESC.
+
+tipsext.config.fadeSpeed=Скорость цикла затухания (мс)
+tipsext.config.fadeSpeed.tooltip=Чем выше значение, тем медленнее дыхание.
+
+tipsext.config.minAlpha=Минимальная прозрачность
+tipsext.config.minAlpha.tooltip=Прозрачность текста, когда он находится в самой тусклой точке.
+
+tipsext.config.maxAlpha=Максимальная прозрачность
+tipsext.config.maxAlpha.tooltip=Прозрачность текста, когда он находится в самой яркой точке.
+
+# Tips Mod Title
+tips.gui.title=Совет
