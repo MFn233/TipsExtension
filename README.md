@@ -16,7 +16,7 @@ Pause menu tips share the same content and style as the **loading screen** tips.
 
 ![tips breathing effect](https://cdn.modrinth.com/data/cached_images/cc4b9dfdf46ead8b3350eadd0130e1cf4ffb7ec1.gif)
 
-The breathing effect also applies to loading screen tips.
+The breathing effect only applies to pause screen tips.
 
 ## ❓ Why This Mod Exists
 
