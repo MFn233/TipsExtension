@@ -9,11 +9,18 @@ public class ModConfig {
 
     // 定义分类名称常量
     public static String CAT_GENERAL = "general";
+    public static String CAT_PAUSE = "pause";
     public static String CAT_BREATHING = "breathing";
 
     public static boolean showPauseTips;
     public static boolean enableAutoRefresh;
     public static int refreshInterval;
+
+    // 暂停界面提示的独立位置（不再借 Tips 的 xOffset / yOffset）
+    public static int pauseX;
+    public static int pauseY;
+    public static int pauseWidthPercent;
+
     public static boolean enableFade;
     public static float fadeSpeed;
     public static float minAlpha;
@@ -26,11 +33,12 @@ public class ModConfig {
 
     public static void syncConfig() {
         // --- 定义分类并设置语言 Key ---
-        // 常规分类
         ConfigCategory catGeneral = config.getCategory("general");
         catGeneral.setLanguageKey("tipsext.config.category.general");
 
-        // 呼吸效果分类
+        ConfigCategory catPause = config.getCategory("pause");
+        catPause.setLanguageKey("tipsext.config.category.pause");
+
         ConfigCategory catBreathing = config.getCategory("breathing");
         catBreathing.setLanguageKey("tipsext.config.category.breathing");
 
@@ -43,6 +51,20 @@ public class ModConfig {
 
         refreshInterval = config.getInt("03_refreshInterval", CAT_GENERAL, 5, 1, 3600,
                 "Time between tip changes.", "tipsext.config.refreshInterval");
+
+        // --- 暂停界面位置（独立于 Tips 的加载界面位置）---
+        pauseX = config.getInt("01_pauseX", CAT_PAUSE, 4, 0, 4000,
+                "Distance from the left edge of the screen, in GUI-scaled pixels.",
+                "tipsext.config.pauseX");
+
+        pauseY = config.getInt("02_pauseY", CAT_PAUSE, 4, 0, 4000,
+                "Distance from the bottom edge of the screen, in GUI-scaled pixels. "
+                        + "The tip block is bottom-aligned, so the title grows upwards from here.",
+                "tipsext.config.pauseY");
+
+        pauseWidthPercent = config.getInt("03_pauseWidthPercent", CAT_PAUSE, 50, 10, 100,
+                "Maximum width of the tip body, as a percentage of the screen width.",
+                "tipsext.config.pauseWidthPercent");
 
         // --- 呼吸效果 ---
         enableFade = config.getBoolean("01_enableFade", CAT_BREATHING, true,

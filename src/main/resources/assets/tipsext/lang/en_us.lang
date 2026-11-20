@@ -31,3 +31,11 @@ tipsext.config.maxAlpha.tooltip=The transparency when the text is at its brighte
 
 # Tips Mod Title
 tips.gui.title=Tip
+# Pause Menu Position
+tipsext.config.category.pause=Pause Menu Position
+tipsext.config.pauseX=Horizontal Offset (from left)
+tipsext.config.pauseX.tooltip=Distance of the tip from the left edge of the screen in the pause menu, in GUI-scaled pixels.
+tipsext.config.pauseY=Vertical Offset (from bottom)
+tipsext.config.pauseY.tooltip=Distance of the tip from the bottom edge of the screen. The block is bottom-aligned, so the title grows upwards from this point.
+tipsext.config.pauseWidthPercent=Body Max Width (%)
+tipsext.config.pauseWidthPercent.tooltip=Maximum width of the tip body as a percentage of the screen width. Lower it if long text runs to the screen edge.

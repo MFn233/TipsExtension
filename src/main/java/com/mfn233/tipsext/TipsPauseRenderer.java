@@ -75,12 +75,14 @@ public final class TipsPauseRenderer {
 
         // 坐标统一使用 scaled 单位（与 Tips 自身的 xOffset / yOffset 语义一致）。
         // 旧实现把 x 额外乘了 scaleFactor 而 y 没有，导致换 GUI 缩放时位置漂移。
-        int x = Math.max(0, Config.xOffset);
-        int maxWidth = Math.max(40, gui.width / 2);
+        // 位置使用本模组独立配置（pauseX / pauseY / pauseWidthPercent），不再借用 Tips 给加载界面调的 xOffset / yOffset
+        int x = Math.max(0, ModConfig.pauseX);
+        int widthPercent = Math.max(10, Math.min(100, ModConfig.pauseWidthPercent));
+        int maxWidth = Math.max(40, gui.width * widthPercent / 100);
         int lineHeight = mc.fontRenderer.FONT_HEIGHT;
         int bodyHeight = mc.fontRenderer.getWordWrappedHeight(currentTip, maxWidth);
         int blockHeight = lineHeight + 2 + bodyHeight;
-        int y = Math.max(0, gui.height - Config.yOffset - blockHeight);
+        int y = Math.max(0, gui.height - ModConfig.pauseY - blockHeight);
 
         int alphaChannel = Math.round(currentAlpha() * 255.0F);
         // 注意：alpha 为 0 时 FontRenderer 会强制改回 255（完全不透明），故下限取 1
@@ -125,3 +127,5 @@ public final class TipsPauseRenderer {
         }
     }
 }
+
+
