@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.3] - 2026-11-20
+
+### Fixed
+- 游戏内配置界面（模组列表 → Tips Extension → Config）里看不到新增的 `pause` 分类。原因是 `GuiFactory` 硬编码了 `general` 与 `breathing` 两个分类，新增分类没有登记。
+- 现在改为「顺序表 + 兜底遍历」：先按 `CATEGORY_ORDER` 排序显示，再把未登记的分类补在后面。以后新增分类只需要加进这个数组，不会再出现配置项存在但界面里找不到的情况。
+- 顺带补了配置尚未加载时的空指针保护（退回默认界面而不是崩溃）。
 ## [1.1.2] - 2026-11-20
 
 ### Added
@@ -39,3 +45,4 @@
 
 ### Added
 - This is a default template changelog that follows the [KeepAChangelog Convention](https://keepachangelog.com/en/1.1.0/)
+
