@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.6] - 2026-11-20
+
+### Fixed
+- 呼吸效果此前同时作用于标题「提示」和正文，现在只作用于正文；标题始终保持完全不透明。
+
+### Note
+- 这是 1.1.1 引入的回归：当时为了让标题和正文视觉统一，把同一个 alpha 通道写进了两个颜色。现在按最初的设计分开处理。
 ## [1.1.5] - 2026-11-20
 
 ### Fixed
@@ -62,6 +69,7 @@
 
 ### Added
 - This is a default template changelog that follows the [KeepAChangelog Convention](https://keepachangelog.com/en/1.1.0/)
+
 
 
 

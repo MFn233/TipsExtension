@@ -89,7 +89,8 @@ public final class TipsPauseRenderer {
         alphaChannel = Math.max(1, Math.min(255, alphaChannel));
 
         int bodyColor = (Config.textColor & 0x00FFFFFF) | (alphaChannel << 24);
-        int titleColor = (Config.titleColor & 0x00FFFFFF) | (alphaChannel << 24);
+        // 标题不参与呼吸：始终全不透明（呼吸效果只作用于正文）
+        int titleColor = (Config.titleColor & 0x00FFFFFF) | 0xFF000000;
 
         String localizedTitle = I18n.hasKey("tips.gui.title") ? I18n.format("tips.gui.title") : "Tip";
         mc.fontRenderer.drawStringWithShadow(TextFormatting.BOLD + localizedTitle, x, y, titleColor);
@@ -127,5 +128,6 @@ public final class TipsPauseRenderer {
         }
     }
 }
+
 
 
