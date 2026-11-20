@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.5] - 2026-11-20
+
+### Fixed
+- `mcmod.info` 是**非法 JSON**：`description` 里含真实换行符（`gradle.properties` 会把 `\n` 解析成换行，再原样写进模板），JSON 解析在第 6 行 73 列失败。
+- 后果是 Forge/Cleanroom 会忽略本模组的全部元数据，`dependencies: ["tips"]` 因此失效——玩家未安装 Tips 时不会得到"缺少前置"的友好提示，而是直接崩在类加载阶段。
+- 现在 `mod_description` 改为单行，重新生成的 `mcmod.info` 可正常解析。
+
+### Note
+- 版本号、作者、致谢等字段不受影响；游戏内表现也没有变化，只是元数据恢复可用。
 ## [1.1.4] - 2026-11-20
 
 ### Fixed
@@ -53,5 +62,6 @@
 
 ### Added
 - This is a default template changelog that follows the [KeepAChangelog Convention](https://keepachangelog.com/en/1.1.0/)
+
 
 
