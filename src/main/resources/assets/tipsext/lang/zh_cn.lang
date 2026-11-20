@@ -37,5 +37,6 @@ tipsext.config.pauseX=水平位置（距左边缘）
 tipsext.config.pauseX.tooltip=暂停菜单中提示语距离屏幕左边缘的距离，单位为 GUI 缩放后的像素。
 tipsext.config.pauseY=垂直位置（距底边）
 tipsext.config.pauseY.tooltip=暂停菜单中提示语距离屏幕底边的距离。提示语整块以底边对齐，标题会从这里向上展开。
-tipsext.config.pauseWidthPercent=正文最大宽度（%）
+tipsext.config.pauseWidthPercent=正文最大宽度（占屏幕宽的百分比）
 tipsext.config.pauseWidthPercent.tooltip=提示语正文的最大宽度，占屏幕宽度的百分比。调小可以避免长文本顶到屏幕边缘。
+

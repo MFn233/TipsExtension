@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.4] - 2026-11-20
+
+### Fixed
+- 配置界面里「正文最大宽度」的标签显示为 `Format error: 正文最大宽度（%）`。原因是 Forge 渲染配置项名称时走 `String.format`，标签里的 ASCII 百分号被当成格式符，`%）` 不是合法转换，异常被捕获后返回 `"Format error: " + 原文`。
+- 三个语言文件里的标签改为不含 `%` 的写法（中文「占屏幕宽的百分比」、英文 `percent of screen width`）。
+
+### Note
+- 数值项本身一直是正常工作的，只是标签显示被破坏。若你已经改过 `pauseWidthPercent` 的值，不受影响。
 ## [1.1.3] - 2026-11-20
 
 ### Fixed
@@ -45,4 +53,5 @@
 
 ### Added
 - This is a default template changelog that follows the [KeepAChangelog Convention](https://keepachangelog.com/en/1.1.0/)
+
 
